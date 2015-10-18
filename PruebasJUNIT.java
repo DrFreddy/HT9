@@ -21,7 +21,6 @@ public class PruebasJUNIT {
 	private Word val= new Word("jugar","verbo");
 	private SimpleSet map1;
 	private treeMap  map2;
-	private RedBlackSet map3;
 	private SplayTreeSet map4;
 	private HashMapSet map5;
 	
@@ -44,14 +43,6 @@ public class PruebasJUNIT {
 		map5=new HashMapSet();
 		map5.add(val);
 		assertEquals(val,map5.get(val));
-	}
-	
-	@Test
-	public void RedBlackGet() {
-		map3=new RedBlackSet();
-		map3.add(val);
-		assertEquals(val,map3.get(val));
-		
 	}
 	
 	@Test
