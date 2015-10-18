@@ -28,13 +28,13 @@ class WordSetFactory {
 		    return new SimpleSet();
 	 // if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree
 	    else if (tipo == 2)
-			return new RedBlackTree();
+			return new null;
 	 // if tipo == 3 cree una instancia para un Wordset implementado con Splay Tree
 	    else if (tipo == 3)
 			return  new SplayTreeSet();
 	 // if tipo == 4 cree una instancia para un Wordset implementado con Hash table
 	    else if (tipo == 4)
-			return new HashTable();
+			return new HashMapSet;
 	 // if tipo == 5 cree una instancia para un Wordset implementado con TreeMap
 	    else if (tipo == 5)
 			return new treeMap();
