@@ -1,0 +1,38 @@
+/**
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructura de datos
+ * Sección: 10
+ * Hoja de trabajo #9
+ * -------------------------------------------------
+ * @author Freddy José Ruíz 14592 / Pedro Joaquín Coronado 14224
+ * Clase: HashMapSet
+ *-------------------------------------------------
+ * Descripción:
+ * Manejo de datos a base del ordenamiento HashTable por medio de HasMap del collection frameWork
+ */
+
+
+import java.util.HashMap;
+
+
+public class HashMapSet implements WordSet {
+private HashMap<Integer, Word> map;
+	public HashMapSet(){
+		map= new HashMap<Integer, Word>();
+	}
+
+	@Override
+	public void add(Word wordObject) {
+		map.put(map.size()+1,wordObject);
+	}
+
+	@Override
+	public Word get(Word word) {
+		Word val=null;
+		if (map.containsValue(word)){
+			val= word;
+		}
+		return val;
+	}
+	
+}
