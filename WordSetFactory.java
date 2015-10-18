@@ -34,7 +34,7 @@ class WordSetFactory {
 			return  new SplayTreeSet();
 	 // if tipo == 4 cree una instancia para un Wordset implementado con Hash table
 	    else if (tipo == 4)
-			return new HashMapSet;
+			return new HashMapSet();
 	 // if tipo == 5 cree una instancia para un Wordset implementado con TreeMap
 	    else if (tipo == 5)
 			return new treeMap();
